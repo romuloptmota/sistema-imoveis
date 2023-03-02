@@ -42,3 +42,15 @@ Somente informando para que serve cada uma:
 - psycopg2-binary: para usar o postgre
 - dj-static: para manipular arquivos staticos
 - django-stdimage: para manipular imagens
+
+### Configurar banco de dados
+- Abra seu gerenciado de banco do postgre
+- Crie um banco limpo como deseja, e anote o nome do banco criado. 
+- Tambem precisaremos do seu usuario, senha, host e porta das consfigurações de seu postgre.
+
+### Configurar banco no pycharm
+- Na aplicação Biopark acesse settings
+- Localize Database e substitua os dados do mesmo pelos seus
+- obs. Não altere 'ENGINE': 'django.db.backends.postgresql',
+
+
