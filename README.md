@@ -1,8 +1,14 @@
 ### Linguagem utilizada: Python
+### Banco utilizado: Postgre
+### IDE utilizada: Pycharm
 
-### Foi utilizado sistema windows
+<hr>
+
+### Foi utilizado sistema operacional windows
 
 - Para evitar imprevistos, recomendo usar o mesmo sistema.
+
+<hr>
 
 ### Instalar Pycharm
 - Deve ser usado a versão profissional
@@ -20,12 +26,13 @@ https://www.jetbrains.com/pt-br/pycharm/download/#section=windows
 - Podemos realizar de duas maneria, escolha a que preferir.
 
 #### 1º Após abrir pycharm
-- CLique na guia git no topo > Clone ... > adicione url do clone git > clique no botao clone
+- Clique na guia git no topo > Clone ... > adicione url do clone git > clique no botao clone
 
 #### 2º Após abrir pycharm
 
-- Baixar o clone do projeto direto do github > clicar em file > Open > selecionar onde pjojeto foi baixado
+- Baixar o clone do projeto direto do github > clicar em file > Open > selecionar onde projeto foi baixado
 
+<hr>
 
 ### Instalar bibliotecas:
 
@@ -40,17 +47,19 @@ Somente informando para que serve cada uma:
 
 - django: desenvolvimento web
 - psycopg2-binary: para usar o postgre
-- dj-static: para manipular arquivos staticos
+- dj-static: para manipular arquivos estaticos
 - django-stdimage: para manipular imagens
+
+<hr>
 
 ### Configurar banco de dados
 - Abra seu gerenciado de banco do postgre
 - Crie um banco limpo como deseja, e anote o nome do banco criado. 
-- Tambem precisaremos do seu usuario, senha, host e porta das consfigurações de seu postgre.
+- Tambem precisaremos do usuario, senha, host e porta das configurações de seu postgre.
 
 ### Configurar banco no pycharm
 - Na aplicação Biopark acesse settings
-- Localize Database e substitua os dados do mesmo pelos seus
+- Localize Database e substitua os dados do mesmo pelos seus que foi anotado anteriormente.
 - obs. Não altere 'ENGINE': 'django.db.backends.postgresql',
 
 
