@@ -17,6 +17,7 @@ class Apartament(models.Model):
     banheiros = models.DecimalField('Nº de banheiros', decimal_places=0, max_digits=2)
     vagas = models.DecimalField('Nº de vagas', decimal_places=0, max_digits=2)
     tamanho = models.DecimalField('m²', decimal_places=0, max_digits=4)
+    codigo = models.DecimalField('cod. identificação', decimal_places=0, max_digits=10)
     valor = models.DecimalField('Valor', decimal_places=0, max_digits=10)
     imagem1 = StdImageField('Imagem 1', upload_to='media/apartamentos', variations={'thump': {'width': 457, 'height': 367, 'crop': True}})
     imagem2 = StdImageField('Imagem 2', upload_to='media/apartamentos', variations={'thump': {'width': 457, 'height': 367, 'crop': True}})
