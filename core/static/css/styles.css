@@ -178,3 +178,7 @@ h1,h2,h3,h4,h5,h6 {
 .footer-author-item {
     padding-right: 1rem;
 }
+
+.client-author-item{
+    font-size: 1.3rem;
+}
