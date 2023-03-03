@@ -8,10 +8,17 @@ class IndexView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(IndexView, self).get_context_data(**kwargs)
 
-        context['apartament'] = Apartament.objects.all()
+        context['apartament'] = Apartament.objects.filter(disponivel=True)
 
         return context
 
 
 class ClientesView(TemplateView):
     template_name = 'clientes.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(ClientesView, self).get_context_data(**kwargs)
+
+        context['apartament'] = Apartament.objects.filter(disponivel=False)
+
+        return context
