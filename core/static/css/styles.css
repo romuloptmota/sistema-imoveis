@@ -164,3 +164,17 @@ h1,h2,h3,h4,h5,h6 {
 .properties-footer a:hover {
     filter: brightness(1.2);
 }
+
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-debug-dark);
+    color: var(--color-gray-1);
+    padding: calc(var(--spacing-gutter-medium)/1.5);
+    font-size: 1.5rem;
+}
+
+.footer-author-item {
+    padding-right: 1rem;
+}
