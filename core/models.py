@@ -25,7 +25,7 @@ class Apartamento(models.Model):
     imagem4 = StdImageField('Imagem 4', upload_to='apartamentos', variations={'thump': {'width': 457, 'height': 367, 'crop': True}})
     imagem5 = StdImageField('Imagem 5', upload_to='apartamentos', variations={'thump': {'width': 457, 'height': 367, 'crop': True}})
     disponivel = models.BooleanField('Disponivel?', default=True)
-    locatario = models.OneToOneField("Cliente", on_delete=models.PROTECT, blank=True, null=True)
+    locatario = models.ForeignKey("Cliente", on_delete=models.PROTECT, blank=True, null=True)
 
 
 class Cliente(models.Model):
