@@ -81,19 +81,36 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 4rem;
     color: var(--color-gray-1);
     text-decoration: none;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
+
     width: fit-content;
-    margin: 0 auto;
+    margin: 8rem;
 }
 
-.main-logo-icon {
-    margin-right: 2rem;
+.main-logo-login {
+    font-size: 2rem;
+    color: var(--color-gray-1);
+    text-decoration: none;
+
+    width: fit-content;
+    margin-left: 67rem;
 }
 
-.main-content {
+.main-logo-cliente {
+    font-size: 2rem;
+    color: var(--color-gray-1);
+    text-decoration: none;
+
+    width: fit-content;
+    margin-left: 1rem;
+}
+
+.main-logo-cadastrar{
+    font-size: 2rem;
+    color: var(--color-gray-1);
+    text-decoration: none;
+
+    width: fit-content;
+    margin-left: 57rem;
 }
 
 .main-content-list {
