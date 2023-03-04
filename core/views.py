@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from .models import Apartament
+from .models import Apartamento
 
 
 class IndexView(TemplateView):
@@ -8,7 +8,7 @@ class IndexView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(IndexView, self).get_context_data(**kwargs)
 
-        context['apartament'] = Apartament.objects.filter(disponivel=True)
+        context['apartamento'] = Apartamento.objects.filter(disponivel=True)
 
         return context
 
@@ -19,6 +19,6 @@ class ClientesView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(ClientesView, self).get_context_data(**kwargs)
 
-        context['apartament'] = Apartament.objects.filter(disponivel=False)
+        context['apartamento'] = Apartamento.objects.filter(disponivel=False)
 
         return context

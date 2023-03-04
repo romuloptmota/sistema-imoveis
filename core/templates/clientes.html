@@ -2,30 +2,34 @@
 
     {% block content %}
 
+        <! -- header -->
+        {% include 'header_client.html' %}
+        <! / -- header -->
+
         <! -- clientes -->
 
         <main class="main-content-container">
             <div class="main-content main-content-list container">
 
-                {% for client in apartament %}
+                {% for cliente in apartamento %}
                 <div class="properties properties-list-item">
 
                     <div class="properties-title-container">
-                        <h2 class="properties-title">Edifíco {{ client.edificio }}, Apto {{ client.apartamento }}</h2>
+                        <h2 class="properties-title">Edifíco {{ cliente.edificio }}, Apto {{ cliente.apartamento }}</h2>
                     </div>
                     <div class="properties-author">
                         <div class="client-author-item">
-                            <i class="fa-solid fa-user"></i> Locatario: {{ client.locatario }}
+                            <i class="fa-solid fa-user"></i> Locatario: {{ cliente.locatario }}
                         </div>
                         <div class="client-author-item">
-                            <i class="fa-solid fa-envelope"></i> E-mail: {{ client.locatario.email }}
+                            <i class="fa-solid fa-envelope"></i> E-mail: {{ cliente.locatario.email }}
                         </div>
                         <div class="client-author-item">
-                            <i class="fa-solid fa-phone"></i> Telefone: {{ client.locatario.telefone }}
+                            <i class="fa-solid fa-phone"></i> Telefone: {{ cliente.locatario.telefone }}
                         </div>
                     </div>
                     <div class="properties-title-valor">
-                        <h4 class="properties-title">R$ <span class="properties-value"> {{ client.valor }}</span>,00 /mês</h4>
+                        <h4 class="properties-title">R$ <span class="properties-value"> {{ cliente.valor }}</span>,00 /mês</h4>
                     </div>
 
                 </div>
