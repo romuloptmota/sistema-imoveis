@@ -14,7 +14,7 @@ class IndexListView(ListView):
 
     # Paginação
     template_name = 'index.html'
-    paginate_by = 2
+    paginate_by = 12
     ordering = '-edificio'
     model = Apartamento
 

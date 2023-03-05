@@ -336,4 +336,7 @@ h1,h2,h3,h4,h5,h6 {
     box-shadow: -1px 2px 4px rgba(0, 0, 0, .2);
 }
 
-
+.pagination{
+    margin: 0 auto;
+    border-radius: .4rem;
+}
