@@ -10,7 +10,7 @@ class Edificiodmin(admin.ModelAdmin):
 @admin.register(Apartamento)
 class ApartamentoAdmin(admin.ModelAdmin):
     list_display = ('edificio', 'apartamento', 'quartos', 'banheiros', 'vagas', 'tamanho', 'valor', 'codigo',
-                    'imagem1', 'imagem2', 'imagem3', 'imagem4', 'imagem5', 'disponivel', 'locatario')
+                    'disponivel', 'locatario', 'imagem1', 'imagem2', 'imagem3', 'imagem4', 'imagem5')
 
 
 @admin.register(Cliente)

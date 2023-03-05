@@ -25,7 +25,7 @@ class IndexListView(ListView):
         if txt_nome:
             edificios = Apartamento.objects.filter(disponivel=True, edificio__edificio=txt_nome)
         else:
-            edificios = Apartamento.objects.filter(disponivel=True)
+            edificios = Apartamento.objects.filter(disponivel=True).order_by('-edificio')
 
         return edificios
 
