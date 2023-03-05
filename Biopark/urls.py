@@ -22,3 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+admin.AdminSite.site_header = 'Área Administrativa Imóveis'
+admin.AdminSite.site_title = 'Sistema Imóvies'
+admin.AdminSite.index_title = 'Cadastro de Usuários, Imóveis e Clientes'
