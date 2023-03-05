@@ -2,41 +2,54 @@
 
     {% block content %}
 
-        <!-- clientes -->
+        <!-- Locatarios -->
 
-        <main class="main-content-container">
-            <div class="main-content main-content-list container">
+            <div class="container">
 
-                {% for cliente in apartamento %}
-                <div class="properties properties-list-item">
+                <div class="client-register">
 
-                    <div class="properties-title-container">
-                        <h2 class="properties-title">Edifíco {{ cliente.edificio }}, Apto {{ cliente.apartamento }}</h2>
-                    </div>
-                    <div class="properties-author">
-                        <div class="client-author-item">
-                            <i class="fa-solid fa-user"></i> Locatario: {{ cliente.locatario }}
+                    <!-- fom cadastro -->
+                    <div class="client-register-background">
+
+                        <div>
+                            <h2 class="client-register-title">Locatários</h2>
                         </div>
-                        <div class="client-author-item">
-                            <i class="fa-solid fa-envelope"></i> E-mail: {{ cliente.locatario.email }}
-                        </div>
-                        <div class="client-author-item">
-                            <i class="fa-solid fa-phone"></i> Telefone: {{ cliente.locatario.telefone }}
-                        </div>
+
+                        <table class="table">
+                          <thead>
+                            <tr class="table-title">
+                              <th scope="col">Cliente</th>
+                              <th scope="col">Edifício</th>
+                              <th scope="col">Apto</th>
+                              <th scope="col">Aluguel</th>
+                              <th scope="col">Telefone</th>
+                              <th scope="col">E-mail</th>
+                            </tr>
+                          </thead>
+                          <tbody class="table-data">
+
+                          {% for cliente in apartamento %}
+                            <tr >
+                              <td>{{ cliente.locatario }}</td>
+                              <td>{{ cliente.edificio }}</td>
+                              <td>{{ cliente.apartamento }}</td>
+                              <td>{{ cliente.valor }},00</td>
+                              <td>{{ cliente.locatario.telefone }}</td>
+                              <td>{{ cliente.locatario.email }}</td>
+                            </tr>
+                          {% endfor %}
+
+                          </tbody>
+                        </table>
+
                     </div>
-                    <div class="properties-title-valor">
-                        <h4 class="properties-title">R$ <span class="properties-value"> {{ cliente.valor }}</span>,00 /mês</h4>
-                    </div>
+
+                    <!-- / locatarios -->
 
                 </div>
-                {% endfor %}
-
             </div>
 
-        </main>
 
-
-
-    <!-- / clientes -->
+<!-- /  properties-views -->
 
     {% endblock %}

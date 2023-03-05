@@ -270,6 +270,41 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 3rem;
 }
 
+.client-register {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.client-register-background {
+    background: var(--color-gray-0);
+    box-shadow: -10px 5px 15px rgba(0, 0, 0, .2);
+    padding: 5rem;
+    padding-top: 2rem;
+}
+
+.client-register-title {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    color: var(--color-debug-dark);
+}
+
+.table {
+    font-family: 'Lato', var(--font-headings);
+    font-size: 1.5rem;
+}
+
+.table-title{
+    font-family: 'Lato', var(--font-headings);
+    font-size: 2rem;
+    color: var(--color-debug-dark);
+}
+
+.table-data {
+    font-size: 1.5rem;
+    color: var(--color-gray-6);
+}
+
 .botton-regiter {
     margin-top: 2rem;
 }
