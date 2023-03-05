@@ -268,6 +268,7 @@ h1,h2,h3,h4,h5,h6 {
 .register-title {
     margin-top: 2rem;
     margin-bottom: 3rem;
+    color: var(--color-debug-dark);
 }
 
 .client-register {
@@ -310,18 +311,21 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .custom-btn {
-    width: 100px;
-    height: 40px;
+    width: 120px;
+    height: 41px;
     padding: 10px 25px;
     border: 1px solid var(--color-debug-dark);
     font-family: 'Lato', var(--font-headings);
     font-weight: 500;
+    font-size: 1.5rem;
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
     margin-top: 2rem;
+    border-radius: .4rem;
+    color: var(--color-debug-dark);
 }
 
 /* 1 */
