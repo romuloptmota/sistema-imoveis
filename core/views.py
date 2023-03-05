@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView, ListView
-from .models import Apartamento
+from .models import Apartamento, Edificio
 
 # controle de login
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -19,11 +19,19 @@ class IndexListView(ListView):
     model = Apartamento
 
     def get_queryset(self):
-        return Apartamento.objects.filter(disponivel=True)
+
+        # Campo de busca e return banco
+        txt_nome = self.request.GET.get('nome')
+        if txt_nome:
+            edificios = Apartamento.objects.filter(disponivel=True, edificio__edificio=txt_nome)
+        else:
+            edificios = Apartamento.objects.filter(disponivel=True)
+
+        return edificios
 
 
 class ClientesView(LoginRequiredMixin, TemplateView):
-    # acesso somente logado - deslogado enviado para index
+    # acesso somente logado - deslogado enviado para index - LoginRequiredMixin
     login_url = reverse_lazy('index')
 
     template_name = 'clientes.html'

@@ -3,9 +3,9 @@
     <div class="search-container">
         <div class="container">
 
-            <form class="search-form" method="GET" id="search-form">
-                <input type="text" class="search-input" name="search" id="search" autocomplete="off">
-                <button type="submit" class="search-button"><i class="fas fa-search" id="search-btn"></i></button>
+            <form action="?" class="search-form" method="GET">
+                <input type="text" class="search-input" name="nome" id="" value="{{ request.GET.nome }}" autocomplete="off" placeholder="Digito o nome do edifício que deseja buscar apartamentos disponívies">
+                <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
             </form>
 
         </div>
