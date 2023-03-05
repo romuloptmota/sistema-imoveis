@@ -18,6 +18,7 @@ class IndexView(TemplateView):
 
         context['apartamento'] = Apartamento.objects.filter(disponivel=True)
 
+
         return context
 
 
