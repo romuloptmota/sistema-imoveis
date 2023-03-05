@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+        <! -- properties-views -->
+
+            <div class="container">
+
+                <div class="form-register">
+
+                    <!-- fom cadastro -->
+                    <div class="properties-register">
+
+                        <div>
+                            <h2 class="register-title">Criar Conta</h2>
+                        </div>
+
+                        <form name="from-users" id="formUser" method="post" action="/banco/">
+                            <div class="co-6 mt-4 m-auto">
+                                {% if msg %}
+                                    <div class="alert {{class}}">
+                                        {{msg}}
+                                    </div>
+                                {% endif %}
+
+                                {% csrf_token %}
+                                <input class="form-control mt-4" type="text" name="name" id="name" placeholder="Nome:">
+                                <input class="form-control mt-4" type="text" name="user" id="user" placeholder="Nome do Usuario:">
+                                <input class="form-control mt-4" type="password" name="password" id="password" placeholder="Senha: ">
+                                <input class="form-control mt-4" type="password" name="password-conf" id="password-conf" placeholder="Repita a Senha: ">
+                                <input class="form-control mt-4" type="email" name="email" id="email" placeholder="Email: ">
+                                <input class="custom-btn btn-1 " type="submit" value="Cadastrar">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- / form cadastro -->
+
+                </div>
+            </div>
+
+
+<! / -- properties-views -->
+
+{% endblock %}
