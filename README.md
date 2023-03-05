@@ -42,6 +42,7 @@ Abra o terminal na parte inferior do pycharm, e adicione os seguintes comandos
 - pip install psycopg2-binary
 - pip install dj-static
 - pip install django-stdimage
+- pip install django-bootstrap4
 
 Somente informando para que serve cada uma:
 
