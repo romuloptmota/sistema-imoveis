@@ -33,6 +33,7 @@ pessoas que podem desistir durante o processo.
 ### Orientações para teste de Projeto
 
 - Qualquer duvida pode entrar em contato, estou a disposição. 
+- Na pasta imagem fora do projeto, possui imagens do projeto final carregado para terem noções do resultado final.
 
 <hr>
 
@@ -69,22 +70,111 @@ https://www.jetbrains.com/pt-br/pycharm/download/#section=windows
 
 ### Após instalação pycharm
 
-- Abrir o projeto
-- Podemos realizar de duas maneria, escolha a que preferir.
+- Abrir o pycharm
+- No menu superior localize o git
+- Clique no mesmo e dpois em clone ...
+- Adicione a url do clone plojeto do git
+- https://github.com/romuloptmota/sistema-imoveis.git
+- Em diretorio selecione onde quer salvar
+- Na tela que aparecer clique em Trust Project
+- Em seguida ira perguntar como abrir, e pode ser new windows
+- Nisso ira perguntar sobre criar ambiente virtual, clique em ok
+- Irá começar a instalar alguns pacotes, e é so aguardar
 
-#### 1º Após abrir pycharm
-- Clique na guia git no topo > Clone ... > adicione url do clone git > clique no botao clone
+<hr>
 
-#### 2º Após abrir pycharm
+### Configurar banco de dados
+- Abra seu gerenciado de banco do postgre
+- Crie um banco limpo como deseja, e anote o nome do banco criado. 
+- Tambem precisaremos do usuario, senha, host e porta das configurações de seu postgre.
 
-- Baixar o clone do projeto direto do github > clicar em file > Open > selecionar onde projeto foi baixado
 
+### Configurar banco no pycharm
+- Na aplicação Biopark acesse settings
+- Localize Database e substitua os dados do mesmo pelos seus que foi anotado anteriormente.
+- NAME, USER, PASSWORD, HOST e PORT 
+- obs. Não altere 'ENGINE': 'django.db.backends.postgresql', pois ela que define as configurações do banco que estamos usando, no caso o postgre.
+
+### Subir o banco da aplicação
+- Mais antes tesmos que limpara as migrations anteriores
+- acesse pasta migrations na aplicação core,  e se tiver arquivos, delete todos arquivos exceto init.py
+
+- Agora abra o terminal do pycharm que fica na parte inferior, somente clicar no terminal
+- Agora coloque os seguintes comandos um por vez na mesma ordem
+- python manage.py makemigrations
+- python manage.py migrate
+
+<hr>
+
+### Testar aplicação 
+- no terminal do pycharm coloque o comando
+- python manage.py runserver
+- Ira aparecer o link http://127.0.0.1:8000/
+- clique nele e aplicação já esta funcionado, porem sem dados
+- Mais antes temos que criar um usuario administrador para ter acesso a area administrativa
+- Temos duas maneira abaixo
+
+<hr>
+
+### Criando usuario administrador
+
+- 1º Com sistema aberto clique em criar conta, pois deixei como administrador para facilitar
+- Adicione um usuario, senha, confirme a senha, email e clique em cadastrar
+- Aparecera a mensagem cadastrado com sucesso
+- 2º o segundo modo é pelo terminal do pycharm
+- Digite o comando
+- python manage.py createsuperuser
+- mesmo modo, adicione os seus dados solicitados um por vez ate finalizar
+- Pronto, agora temos usuario administrado e podemos carregar o sistema
+
+obs. Para fazer o sistema parar de rodar, selecionado o terminal, pressione Ctrl + C, e para rodar novamente mesmo comando anterior no terminal python manage.py runserver
+
+<hr>
+
+### Acessando area administrativa do sistema
+- Tambem podemos acessar de duas maneiras 
+- Com o sitema rodando clique em login e acesse com os dados criado
+- ou no navegado adicione /admin ex. http://127.0.0.1:8000/admin e informe os dados criados
+- Agora estamos na area administrativa onde podemos carregar o site
+
+### Carregando o site
+- Após acessar estara visualizando alguns links que vamos usar, o Edificios, Apartaments e Clientes
+- Para ver o que já foi cadastrado é só clicar no link
+- E para cadastrar é somente clicar em adicionar, ou caso queira modificar
+- No caso no momento esta vazio, então vamos inicianr os cadastros
+
+### Informações area administrativa
+- Antes de cadastrar os apartamentos, deve cadastrar os edificios
+- Todos clientes que deja vincular a imoveis alocados deve cadastrar em clientes
+- Nisso cadastre os clientes
+- Quando for adicionar os apartamentos, selecione um dos edificios que o mesmo pertence
+- Preencha os dados , e adicione as cinco imagens do mesmo
+- Agora o checkbox disponivel irá desmarcar sempre que for vincular um cliente
+- Abaixo no disponivel que ira selecionar o nome do cliente
+- Importante, esse checkbox que irar determinar os imoveis que aparecera disponivel no site, ou na area restrita locatarios
+- Não deixe de desmarcar se vincular ao usuario
+
+obs. para ver como esta ficando no site, somente clicar na parete superior esquerda ver o site, que volta para o mesmo, porema agora com opções novas no menu
+
+- Clientes para visualizar todos Locatarios e seudades, essa tela fica somente visivel para pessoas logadas no sistema
+- E o botão cadastrar, para voltar para a area adiministrativa
+- Quando quiser terminar pode clicar em logou, ou em encerrar sessão na area administrativa.
+
+#### Espero ter passado nodas infomrações necessario, mais de qualquer forma estou a disposição para qualquer duvida
+
+<hr>
 <hr>
 
 ### Instalar bibliotecas:
 
-Abra o terminal na parte inferior do pycharm, e adicione os seguintes comandos
+#### Somente se paresentar algum erro em alguma biblioteca usada, pode tentar reinstalar
 
+- obs. caso apareceça a mensagem ao tenta instalr as bibliotecas abaico
+- To update, run: python.exe -m pip install --upgrade pip
+- Use esse comando antes de instalar a biblioteca
+- python.exe -m pip install --upgrade pip
+
+- No terminal do pycharm
 - pip install django
 - pip install psycopg2-binary
 - pip install dj-static
@@ -98,16 +188,6 @@ Somente informando para que serve cada uma:
 - dj-static: para manipular arquivos estaticos
 - django-stdimage: para manipular imagens
 
-<hr>
 
-### Configurar banco de dados
-- Abra seu gerenciado de banco do postgre
-- Crie um banco limpo como deseja, e anote o nome do banco criado. 
-- Tambem precisaremos do usuario, senha, host e porta das configurações de seu postgre.
-
-### Configurar banco no pycharm
-- Na aplicação Biopark acesse settings
-- Localize Database e substitua os dados do mesmo pelos seus que foi anotado anteriormente.
-- obs. Não altere 'ENGINE': 'django.db.backends.postgresql',
 
 
