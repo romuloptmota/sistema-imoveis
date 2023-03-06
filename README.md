@@ -1,6 +1,47 @@
-### Linguagem utilizada: Python
-### Banco utilizado: Postgre
-### IDE utilizada: Pycharm
+## Desafio Tech Biopark 2023
+
+### Requisitos
+
+- O sistema deve permitir cadastrar edifícios e apartamentos
+- O sistema deve permitir visualizar a disponibilidade dos apartamentos
+- O sistema deve permitir alugar um apartamento para um locatário
+- O sistema deve permitir visualizar o locatário do apartamento
+
+### Premissas
+
+- Cada apartamento do ecossistema pertence a um edifício
+- Cada apartamento alugado deve ter um locatário
+- Cada apartamento alugado deve ter o valor de aluguel mensal cadastrado
+- Considere o Biopark como locador dos apartamentos
+
+<hr>
+
+## Descrição
+
+Baseado nas premissas e requisitos do projeto, foi solicitado a criação de um sistema para apresentação de imóveis 
+disponíveis para locação, onde deve ter os dados deles, porém também deve ter os dados de seus clientes, e quando 
+locatários, um vínculo entre eles.
+Levando em consideração a todas essas informações, optei por desenvolver um sistema onde  todos os dados sempre será 
+registrado e acompanhado por pessoas autorizadas, com exceção da página de imóveis disponíveis, pois levando em conta os 
+meios utilizados da maior parte das imobiliárias no mercado, para que haja uma contratação, seria necessário a troca de 
+documentos e autenticações por meios legais, sendo assim um cadastro direto pelo usuário talvez não seja a melhor pratica, 
+porque a aprovação pode ser complicada, e caso não aprovada, teria dados inúteis no banco, sem contar todos os dados de 
+pessoas que podem desistir durante o processo.
+
+<hr>
+
+### Observação
+Para facilitar teste, e verificações do funcionamento do sistema, o cadastrar do sistema está como super usuário, porém 
+se fosse utilizar o mesmo, seria recomendado modificar o cadastro para usuário comum, e posteriormente ser autorizado 
+os acessos por um administrador.
+
+<hr>
+
+### Tecnologias
+
+- Linguagem utilizada: Backend (Python e Django), Frontend (HTML, CSS e Bootstrap)
+- Banco utilizado: PostgreSQL
+- IDE utilizada: Pycharm
 
 <hr>
 
