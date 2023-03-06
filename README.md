@@ -68,39 +68,39 @@ link para download pycharm:
 
 https://www.jetbrains.com/pt-br/pycharm/download/#section=windows
 
-### Após instalação pycharm
+### Após instalação pycharm - Clonar projeto github
 
 - Abrir o pycharm
 - No menu superior localize o git
-- Clique no mesmo e dpois em clone ...
-- Adicione a url do clone plojeto do git
+- Clique no mesmo e depois em clone ...
+- Adicione a url do clone do plojeto do github
 - https://github.com/romuloptmota/sistema-imoveis.git
 - Em diretorio selecione onde quer salvar
 - Na tela que aparecer clique em Trust Project
 - Em seguida ira perguntar como abrir, e pode ser new windows
 - Nisso ira perguntar sobre criar ambiente virtual, clique em ok
-- Irá começar a instalar alguns pacotes, e é so aguardar
+- Irá começar a instalar alguns pacotes, e é só aguardar
 
 <hr>
 
 ### Configurar banco de dados
 - Abra seu gerenciado de banco do postgre
-- Crie um banco limpo como deseja, e anote o nome do banco criado. 
+- Crie um banco limpo como desejar, e anote o nome do banco criado. 
 - Tambem precisaremos do usuario, senha, host e porta das configurações de seu postgre.
 
 
 ### Configurar banco no pycharm
-- Na aplicação Biopark acesse settings
+- Na aplicação Biopark do lado esquerdo acesse settings
 - Localize Database e substitua os dados do mesmo pelos seus que foi anotado anteriormente.
 - NAME, USER, PASSWORD, HOST e PORT 
 - obs. Não altere 'ENGINE': 'django.db.backends.postgresql', pois ela que define as configurações do banco que estamos usando, no caso o postgre.
 
 ### Subir o banco da aplicação
-- Mais antes tesmos que limpara as migrations anteriores
-- acesse pasta migrations na aplicação core,  e se tiver arquivos, delete todos arquivos exceto init.py
+- Mais antes tesmos que limpar a as migrations anteriores
+- acesse pasta migrations na aplicação core do lado esquerdo,  e se tiver arquivos, delete todos arquivos exceto init.py
 
 - Agora abra o terminal do pycharm que fica na parte inferior, somente clicar no terminal
-- Agora coloque os seguintes comandos um por vez na mesma ordem
+- Em seguida coloque os seguintes comandos um por vez na mesma ordem
 - python manage.py makemigrations
 - python manage.py migrate
 
@@ -125,9 +125,9 @@ https://www.jetbrains.com/pt-br/pycharm/download/#section=windows
 - Digite o comando
 - python manage.py createsuperuser
 - mesmo modo, adicione os seus dados solicitados um por vez ate finalizar
-- Pronto, agora temos usuario administrado e podemos carregar o sistema
+- Pronto, agora temos usuario administrador e podemos carregar o sistema
 
-obs. Para fazer o sistema parar de rodar, selecionado o terminal, pressione Ctrl + C, e para rodar novamente mesmo comando anterior no terminal python manage.py runserver
+obs. Para fazer o sistema parar de rodar, selecionado o terminal, pressione Ctrl + C, e para rodar novamente, mesmo comando anterior no terminal python manage.py runserver
 
 <hr>
 
@@ -138,29 +138,29 @@ obs. Para fazer o sistema parar de rodar, selecionado o terminal, pressione Ctrl
 - Agora estamos na area administrativa onde podemos carregar o site
 
 ### Carregando o site
-- Após acessar estara visualizando alguns links que vamos usar, o Edificios, Apartaments e Clientes
+- Após acessar estara visualizando alguns links que vamos usar, o Edificios, Apartamentos e Clientes
 - Para ver o que já foi cadastrado é só clicar no link
 - E para cadastrar é somente clicar em adicionar, ou caso queira modificar
-- No caso no momento esta vazio, então vamos inicianr os cadastros
+- No caso no momento esta vazio, então vamos iniciar os cadastros
 
 ### Informações area administrativa
 - Antes de cadastrar os apartamentos, deve cadastrar os edificios
-- Todos clientes que deja vincular a imoveis alocados deve cadastrar em clientes
+- Todos clientes que deseja vincular a imoveis alocados deve cadastrar em clientes
 - Nisso cadastre os clientes
 - Quando for adicionar os apartamentos, selecione um dos edificios que o mesmo pertence
 - Preencha os dados , e adicione as cinco imagens do mesmo
 - Agora o checkbox disponivel irá desmarcar sempre que for vincular um cliente
 - Abaixo no disponivel que ira selecionar o nome do cliente
 - Importante, esse checkbox que irar determinar os imoveis que aparecera disponivel no site, ou na area restrita locatarios
-- Não deixe de desmarcar se vincular ao usuario
+- Não deixe de desmarcar se vincular ao um cliente/locatario
 
-obs. para ver como esta ficando no site, somente clicar na parete superior esquerda ver o site, que volta para o mesmo, porema agora com opções novas no menu
+obs. para ver como esta ficando no site, somente clicar na parte superior esquerda ver o site, que volta para o mesmo, porem agora com opções novas no menu
 
-- Clientes para visualizar todos Locatarios e seudades, essa tela fica somente visivel para pessoas logadas no sistema
+- Clientes para visualizar todos Locatarios e seus dados, essa tela ficará somente visivel para pessoas logadas no sistema
 - E o botão cadastrar, para voltar para a area adiministrativa
 - Quando quiser terminar pode clicar em logou, ou em encerrar sessão na area administrativa.
 
-#### Espero ter passado nodas infomrações necessario, mais de qualquer forma estou a disposição para qualquer duvida
+#### Espero ter passado todas as infomrações necessario, mais de qualquer forma, estou a disposição para qualquer duvida.
 
 <hr>
 <hr>
