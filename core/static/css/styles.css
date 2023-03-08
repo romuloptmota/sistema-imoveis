@@ -70,7 +70,8 @@ h1,h2,h3,h4,h5,h6 {
 .container {
     max-width: 144rem;
     margin: 0 auto;
-    padding: var(--spacing-gutter-medium);
+    padding-top: var(--spacing-gutter-medium);
+    padding-bottom: calc(var(--spacing-gutter-medium)/2);
 }
 
 .main-header-container {
@@ -78,21 +79,40 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .main-logo {
+    font-size: 5rem;
+    color: var(--color-gray-1);
+    text-decoration: none;
+    width: fit-content;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.main-menu {
     font-size: 4rem;
     color: var(--color-gray-1);
     text-decoration: none;
-
     width: fit-content;
-    margin: 8rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+}
+
+.main-logo-text{
+    padding-left: 1rem;
 }
 
 .main-logo-login {
     font-size: 2rem;
     color: var(--color-gray-1);
     text-decoration: none;
-
     width: fit-content;
-    margin-left: 60rem;
 }
 
 .main-logo-cliente {
@@ -110,7 +130,7 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
 
     width: fit-content;
-    margin-left: 57rem;
+
 }
 
 .main-criar-conta{
@@ -119,7 +139,7 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
 
     width: fit-content;
-    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .main-content-list {
