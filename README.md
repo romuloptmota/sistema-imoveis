@@ -30,10 +30,7 @@ pessoas que podem desistir durante o processo.
 
 <hr>
 
-### Orientações para teste de Projeto
-
-- Qualquer duvida pode entrar em contato, estou a disposição. 
-- Na pasta imagem fora do projeto, possui imagens do projeto final carregado para terem noções do resultado final.
+## Orientações para teste de Projeto
 
 <hr>
 
@@ -41,6 +38,7 @@ pessoas que podem desistir durante o processo.
 Para facilitar os teste, e verificações do funcionamento do sistema, o cadastrar do sistema está como super usuário, porém 
 se fosse utilizar o mesmo, seria recomendado modificar o cadastro para usuário comum, e posteriormente ser autorizado 
 os acessos por um administrador.
+- Na pasta imagem fora do projeto, possui imagens do projeto final carregado para terem noções do resultado final.
 
 <hr>
 
