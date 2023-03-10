@@ -14,12 +14,11 @@ class IndexListView(ListView):
 
     # Paginação
     template_name = 'index.html'
-    paginate_by = 12
+    paginate_by = 9
     ordering = '-edificio'
     model = Apartamento
 
     def get_queryset(self):
-
         # Campo de busca e return banco
         txt_nome = self.request.GET.get('nome')
         if txt_nome:
